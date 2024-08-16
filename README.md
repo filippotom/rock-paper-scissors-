@@ -23,5 +23,6 @@ Build a very minimalistic style page (like Kanye' store) where there are three p
 
 
 
+
 -Output
     The output should look like a random image of the three possibilities and a text saying if the user lost or won under it.
