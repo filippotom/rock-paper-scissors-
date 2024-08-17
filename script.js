@@ -9,21 +9,20 @@ play_button.addEventListener("click", () => {
     confirm_button.style.display = "block"
 })
 
-function getSelectedRadio() {
-    const radioElement = document.forms[0]
-    let radioValue
+function play() {
 
+    const radioElement = document.getElementsByName("choose")
+    let radioValue = ""
+    
+    // getting the value of the radio input selected
     for(let i = 0; i < radioElement.length; i++) {
         if(radioElement[i].checked) {
-            radioValue = radioElement[i].value
+            radioValue = radioElement[i].value + " "
+            console.log(radioValue)
         }
     }
-    return radioValue
-}
 
+    let random = Math.floor(Math.random() * 4)
+    console.log(random)
 
-function play(value) {
-    console.log(value)
-}
-
-play(getSelectedRadio())    
+}  
