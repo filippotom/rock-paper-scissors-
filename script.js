@@ -1,21 +1,29 @@
 const play_button = document.getElementById("play")
 const container = document.getElementsByClassName("container")
-const confirm_button = document.getElementsByClassName("confirm")
-const radio_rock = document.getElementById("rock")
-const radio_paper = document.getElementById("paper")
-const radio_scissors = document.getElementById("scissors")
+const confirm_button = document.getElementById("confirm")
 
+// this function makes disappear the play button and pops up the container with the game and the confirm button
 play_button.addEventListener("click", () => {
     play_button.style.display = "none"
     container[0].style.display = "flex"
+    confirm_button.style.display = "block"
 })
 
-function confirm() {
-    if(radio_rock.checked) {
-        confirm_button[0].style.display = "block"
-    } else if(radio_paper.checked) {
-        confirm_button[1].style.display = "block"
-    } else if(radio_scissors.checked) {
-        confirm_button[2].style.display = "block"
+function getSelectedRadio() {
+    const radioElement = document.forms[0]
+    let radioValue
+
+    for(let i = 0; i < radioElement.length; i++) {
+        if(radioElement[i].checked) {
+            radioValue = radioElement[i].value
+        }
     }
+    return radioValue
 }
+
+
+function play(value) {
+    console.log(value)
+}
+
+play(getSelectedRadio())    

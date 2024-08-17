@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.start {
+    transform: translateY(-4rem);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.start > button:first-of-type {
+    color: white;
+    background-color: rgb(0, 172, 0);    
+    padding-inline: 3rem;
+    padding-block: 1.5rem;
+    font-size: large;
+    border: none;
+    border-radius: 2rem;
+}
+
+.container {
+    transform: translateY(-2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    display: none;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    margin-bottom: 1rem;
+}
+
+#confirm {
+    display: none;
+}
