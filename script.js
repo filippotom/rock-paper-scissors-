@@ -9,6 +9,8 @@ play_button.addEventListener("click", () => {
     confirm_button.style.display = "block"
 })
 
+
+
 function play() {
 
     const radioElement = document.getElementsByName("choose")
@@ -30,6 +32,7 @@ function play() {
     
 
     if(arrayOption[random] == radioValue) {
+        confirm_button.style.display = "none"
         computerChoice.style.display = "block"
         output.style.display = "block"
         computerChoice.innerHTML = "The computer chose " + arrayOption[random]
@@ -37,6 +40,7 @@ function play() {
         console.log("tie")
 
     } else if(arrayOption[random] == "rock" && radioValue == "paper") {
+        confirm_button.style.display = "none"
         computerChoice.style.display = "block"
         output.style.display = "block"
         computerChoice.innerHTML = "The computer chose " + arrayOption[random]
@@ -44,6 +48,7 @@ function play() {
         console.log("You Won!")
 
     } else if(arrayOption[random] == "scissors" && radioValue == "paper") {
+        confirm_button.style.display = "none"
         computerChoice.style.display = "block"
         output.style.display = "block"
         computerChoice.innerHTML = "The computer chose " + arrayOption[random]
@@ -51,6 +56,7 @@ function play() {
         console.log("You Lost")
 
     } else if(arrayOption[random] == "paper" && radioValue == "scissors") {
+        confirm_button.style.display = "none"
         computerChoice.style.display = "block"
         output.style.display = "block"
         computerChoice.innerHTML = "The computer chose " + arrayOption[random]
@@ -58,6 +64,7 @@ function play() {
         console.log("You Won")
 
     } else if(arrayOption[random] == "paper" && radioValue == "rock"){
+        confirm_button.style.display = "none"
         computerChoice.style.display = "block"
         output.style.display = "block"
         computerChoice.innerHTML = "The computer chose " + arrayOption[random]
@@ -65,6 +72,7 @@ function play() {
         console.log("You Lost")
 
     } else if(arrayOption[random] == "scissors" && radioValue == "rock") {
+        confirm_button.style.display = "none"
         computerChoice.style.display = "block"
         output.style.display = "block"
         computerChoice.innerHTML = "The computer chose " + arrayOption[random]
@@ -72,6 +80,7 @@ function play() {
         console.log("You Won")
 
     } else if(arrayOption[random] == "rock" && radioValue == "scissors"){
+        confirm_button.style.display = "none"
         computerChoice.style.display = "block"
         output.style.display = "block"
         computerChoice.innerHTML = "The computer chose " + arrayOption[random]
@@ -83,6 +92,4 @@ function play() {
         output.innerHTML = "You have not chosen an option, reload the page to play."
         console.log("You have not chosen an option, reload the page to play.")
     }
-
-
 }  

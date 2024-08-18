@@ -44,6 +44,8 @@ body {
 }
 
 img {
+    /* background-image: url(rock.png);
+    background-size: cover; */
     margin-bottom: 1rem;
 }
 
@@ -55,6 +57,11 @@ img {
     font-size: large;
     border: none;
     border-radius: 2rem;
+}
+
+#output {
+    color: red;
+    font-size: 40px;
 }
 
 #computer-choice, #output, #confirm, .container {
