@@ -50,4 +50,11 @@ img {
 
 #confirm {
     display: none;
+    color: white;
+    background-color: rgb(0, 172, 0);    
+    padding-inline: 3rem;
+    padding-block: 1.5rem;
+    font-size: large;
+    border: none;
+    border-radius: 2rem;
 }

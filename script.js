@@ -22,7 +22,13 @@ function play() {
         }
     }
 
-    let random = Math.floor(Math.random() * 4)
-    console.log(random)
 
+    let arrayOption = ["rock", "paper", "scissors"]
+    let random = Math.floor(Math.random() * 4)
+
+    for(let i = 0; i < arrayOption.length; i++) {
+        if(random == arrayOption[i]) {
+            
+        }
+    }
 }  
