@@ -34,7 +34,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    display: none;
 }
 
 .card {
@@ -49,7 +48,6 @@ img {
 }
 
 #confirm {
-    display: none;
     color: white;
     background-color: rgb(0, 172, 0);    
     padding-inline: 3rem;
@@ -57,4 +55,8 @@ img {
     font-size: large;
     border: none;
     border-radius: 2rem;
+}
+
+#computer-choice, #output, #confirm, .container {
+    display: none;
 }
